@@ -1,0 +1,14 @@
+[user]
+    name = Xander Moffatt
+    email = xmoffatt@instructure.com
+[core]
+    # editor = subl -n -w
+    autocrlf = false
+    excludesfile = ~/.gitignore
+[alias]
+    man = help
+    unstage = reset HEAD --
+    amend = commit --verbose --amend
+    graph = log --graph --decorate --oneline
+    followfile = log --follow -p --
+    alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
